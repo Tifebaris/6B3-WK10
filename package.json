@@ -1,0 +1,19 @@
+{
+  "name": "6b3-wk10",
+  "version": "1.0.0",
+  "description": "A to-do list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./styles.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/Tifebaris/6B3-WK10.git"
+  },
+  "author": "Adesewa",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
