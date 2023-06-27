@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <nav>
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden" id="hMenu">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          </span>
+
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden hidden" id="cancel">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+              
+          </span>
+        <ul class="md:flex justify-between md:flex-row flex-col hidden" id="menu">
+            <li>Home</li> 
+            <li>Services</li>
+            <li>About</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+        </ul>
+      
+    </nav>
+
+    <script>
+      const hMenu = document.getElementById('hMenu')
+      const menu = document.getElementById('menu')
+      const cancel = document.getElementById('cancel')
+
+      hMenu.addEventListener('click', function(){
+        menu.classList.toggle("hidden")
+        hMenu.style.display = 'none'
+        cancel.style.display = "block"
+
+
+      })
+
+      cancel.addEventListener('click', function(){
+        menu.classList.toggle("hidden")
+        hMenu.style.display = 'block'
+        cancel.style.display = "none"
+      })
+    
+    </script>
+</body>
+</html>
